@@ -4,6 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## ROADMAP
 
+https://github.com/MatheusTrojan/redu-tech
+
 - expandir o card quando passar o mouse
 
 - O carrinho informar a quantidade de elementos inseridos
