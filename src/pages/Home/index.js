@@ -7,6 +7,7 @@ import { useSelector } from 'react-redux';
 export default function Home() {
   const navigate = useNavigate();
   const categorias = useSelector(state => state.categorias);
+  
   return (
     <div>
       <Header

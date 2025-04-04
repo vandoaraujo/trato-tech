@@ -8,7 +8,7 @@ https://github.com/MatheusTrojan/redu-tech
 
 - expandir o card quando passar o mouse
 
-- O carrinho informar a quantidade de elementos inseridos
+- OK O carrinho informar a quantidade de elementos inseridos
 
 - trocar para a fonte do Raleway
 
@@ -18,6 +18,6 @@ https://github.com/MatheusTrojan/redu-tech
 
 - Finalizar o carrinho exibindo a tela de pagamento ou mensagem de compra realizada com sucesso
 
-- Retirar produtos do carrinho
+- OK Retirar produtos do carrinho
 
 - Reduzir para zero e excluir do carrinho

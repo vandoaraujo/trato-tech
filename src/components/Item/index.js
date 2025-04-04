@@ -4,6 +4,7 @@ import {
   AiFillHeart,
   AiFillMinusCircle,
   AiFillPlusCircle,
+  AiFillDelete, 
 } from 'react-icons/ai';
 import {
   FaCartPlus
@@ -45,6 +46,10 @@ export default function Item(props) {
     dispatch(mudarCarrinho(id));
   }
 
+  function deletarItemCarrinho() {
+    dispatch(mudarCarrinho(id));
+  }
+
   return (
     <div className={classNames(styles.item, {
       [styles.itemNoCarrinho]: carrinho,
@@ -62,6 +67,8 @@ export default function Item(props) {
             R$ {preco.toFixed(2)}
           </div>
           <div className={styles['item-acoes']}>
+
+            
             {favorito
               ? <AiFillHeart {...iconeProps} color='#ff0000' className={styles['item-acao']} onClick={resolverFavorito} />
               : <AiOutlineHeart {...iconeProps} className={styles['item-acao']} onClick={resolverFavorito} />
@@ -69,6 +76,7 @@ export default function Item(props) {
             {carrinho
               ? (
                 <div className={styles.quantidade}>
+                  <AiFillDelete {...iconeProps} className={styles['item-acao']} onClick={deletarItemCarrinho} />
                   Quantidade:
                   <AiFillMinusCircle
                     {...quantidadeProps}

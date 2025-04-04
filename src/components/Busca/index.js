@@ -8,7 +8,6 @@ export default function Busca() {
   const busca = useSelector(state => state.busca);
   const dispatch = useDispatch();
   const location = useLocation();
-  console.log(busca)
   //sempre que o location mudar a gente dispara
   useEffect(() => {
     dispatch(resetarBusca());
